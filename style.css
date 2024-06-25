@@ -1,0 +1,81 @@
+
+body {
+    background-color: #422F9C;
+    color: white;
+    margin: 0%;
+}
+
+header {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo{
+    width: 50%;
+}
+
+.header-buttons {
+    width: 50%;
+    text-align: right;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trending-games-top {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+
+.list-games {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.platforms-section {
+    background-color: black;
+}
+
+footer {
+    background-color: black;
+    font-size: small;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-about-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyrigth {
+    text-align: inherit;
+}
