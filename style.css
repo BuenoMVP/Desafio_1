@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0%;
     padding: 0%;
 }
@@ -73,6 +75,7 @@ main {
     justify-content: center;
     padding: 5%;
     gap: 100px;
+    font-size: 20px;
 }
 
 .introduction-text {
@@ -106,6 +109,13 @@ main {
     border: transparent;
     font-size: 16px;
     margin-top: 30px;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
 }
 
 .currently-trending-games {
@@ -158,6 +168,56 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.description-text-section {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.description-text-box {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    width: 60%;
+    height: auto;
+}
+
+.lorem-ipsum {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lorem-ipsum-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#lorem-ipsum-text {
+    width: 50%;
+    font-size: 20px;
+}
+
+#icon-lorem-ipsum-box {
+    text-align: right;
+    padding-right: 10%;
+    width: 50%;
+    padding-top: 0px;
+}
+
+#icon-lorem-ipsum {
+    padding-top: 17%;
+}
+
+.lorem-ipsum-image {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .platforms-section {
