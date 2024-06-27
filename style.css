@@ -68,7 +68,7 @@ header {
     font-size: 16px;
 }
 
-main {
+.main {
     display: flex;
     flex-direction: column;
     height: 85%;
@@ -221,7 +221,54 @@ h3 {
 }
 
 .platforms-section {
-    background-color: black;
+    background-image: url(images/background/bkg_platforms.png);
+    background-size: cover;
+}
+
+.platforms-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.platforms-text-box {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    width: 70%;
+    height: auto;
+}
+
+#platforms-span {
+    text-align: center;
+    width: 75%;
+    height: auto;
+}
+
+.platforms-icons-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.platforms-icons-button {
+    padding-top: 3ic;
+    padding-bottom: 1ic;
+    width: 25%;
+}
+
+.platforms-icon-arrow {
+    max-width: 1ic;
+    max-height: 1ic;
 }
 
 footer {
