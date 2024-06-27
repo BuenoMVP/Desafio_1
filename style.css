@@ -68,7 +68,7 @@ header {
     font-size: 16px;
 }
 
-.main {
+main {
     display: flex;
     flex-direction: column;
     height: 85%;
@@ -79,7 +79,7 @@ header {
 }
 
 .introduction-text {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,7 +127,7 @@ header {
 }
 
 h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.5;
 }
@@ -303,6 +303,75 @@ h3 {
 
 #projects-button-box {
     padding-top: 50px;
+}
+
+.final-main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.final-main-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.subscribe-box {
+    background-color: #1C140F;
+    border-radius: 10px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.subscribe-content {
+    width: 47%;
+}
+
+.email-content {
+    display: flex;
+    width: 53%;
+    justify-content: right;
+    align-items: center;
+}
+
+#email-insert-form {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    width: 60%;
+    height: 35%;
+    border-radius: 5px;
+    align-items: center;
+    padding-right: 5px;
+}
+
+#email-input {
+    width: 70%;
+    height: 90%;
+    border: 0;
+    outline: 0;
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+#email-button {
+    background-color: #FA9021;
+    border-radius: 5px;
+    color: white;
+    width: 110px;
+    height: 35px;
+    border: transparent;
 }
 
 footer {
