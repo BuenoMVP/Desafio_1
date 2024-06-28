@@ -1,0 +1,68 @@
+footer {
+    height: 10%;
+    background-color: black;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 40px 50px;
+    border-bottom: #FFFFFF 1px solid;
+    height: 70%;
+}
+
+.information div {
+    display: flex;
+    width: 25%;
+}
+
+.footer-logo {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-logo p {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.footer-about-us {
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.footer-about-us p {
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.footer-about-us a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-contact-us {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-contact-us p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.footer-icons {
+    flex-direction: row;
+    justify-content: right;
+    align-items: end;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
