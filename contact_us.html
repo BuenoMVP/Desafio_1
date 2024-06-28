@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,10 @@
             <a class="header-logo-text" href="#">LOGO</a>
         </div>
         <div class="header-buttons-box">
-            <button class="header-button button">Home</button>
-            <button class="header-button button">About us</button>
-            <button class="header-button button">Portfolio</button>
-            <button class="header-button button">News</button>
+            <button class="header-button button-header">Home</button>
+            <button class="header-button button-header">About us</button>
+            <button class="header-button button-header">Portfolio</button>
+            <button class="header-button button-header">News</button>
             <button class="header-button-contact button">Contact us</button>
         </div>
 
@@ -29,37 +29,45 @@
 
     <main>
 
-        <section class="initial-main-section">
+        <section class="initial-main-section section">
 
             <div class="initial-box">
                 <span>Home > <span id="initial-text-color">Contact Us</span></span>
                 <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 <div class="initial-bkg">
-                    <img src="/images/background/bkg_Huge_Global.png" alt="">
+                    <img src="/images/background/bkg_Huge_Global.png" alt="background-world-map">
                 </div>
-                <div class="initial-information">
-                    <div id="info-1">
-                        <p>Follow us</p>
-                        <div class="info-1-icons">
-                            <img src="/images/icons/face_black.png" alt="">
-                            <img src="/images/icons/insta_black.png" alt="">
-                            <img src="/images/icons/twitter_black.png" alt="">
-                            <img src="/images/icons/in_black.png" alt="">
-                        </div>
+            </div>
+            <div class="initial-information">
+                <div id="info-1">
+                    <p>Follow us</p>
+                    <div class="info-1-icons">
+                        <a href="#">
+                            <img src="/images/icons/face_black.png" alt="icon-facebook">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/insta_black.png" alt="icon-intagram">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/twitter_black.png" alt="icon-twitter">
+                        </a>
+                        <a href="#">
+                            <img src="/images/icons/in_black.png" alt="icon-linkedin">
+                        </a>
                     </div>
-                    <div id="info-2">
-                        <div class="info-2-icons">
-                            <img src="/images/icons/phone.png" alt="">
-                        </div>
-                        <p>+94 4444 5555 6</p>
+                </div>
+                <div id="info-2">
+                    <div class="info-2-icons">
+                        <img src="/images/icons/phone.png" alt="icon-phone">
                     </div>
-                    <div id="info-3">
-                        <div class="info-3-icons">
-                            <img src="/images/icons/gps.png" alt="">
-                        </div>
-                        <p info-1-text>but also the leap into electronic typesetting</p>
+                    <p>+94 4444 5555 6</p>
+                </div>
+                <div id="info-3">
+                    <div class="info-3-icons">
+                        <img src="/images/icons/gps.png" alt="icon-gps">
                     </div>
+                    <p info-1-text>but also the leap into electronic typesetting</p>
                 </div>
             </div>
 
@@ -67,7 +75,7 @@
 
         <section class="middle-main-section">
 
-            <div class="middle-content">
+            <section class="middle-content section">
                 <h2>Say hello</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing .</p>
                 <form action="">
@@ -90,25 +98,25 @@
                         <textarea title="input-message" id="input-message" class="input"></textarea>
                     </div>
                     <div class="button-box">
-                        <button type="button">Get in touch</button>
+                        <button type="button" class="button">Get in touch</button>
                     </div>
                 </form>
-            </div>
+            </section>
 
             <div class="background-vet-1">
                 <div>
-                    <img src="/images/background/bkg_vet1.png" alt="">
+                    <img src="/images/background/bkg_vet1.png" alt="vet-backgroud">
                 </div>
             </div>
             <div class="background-vet-2">
                 <div>
-                    <img src="/images/background/bkg_vet2.png" alt="">
+                    <img src="/images/background/bkg_vet2.png" alt="vet-backgroud">
                 </div>
             </div>
 
         </section>
 
-        <section class="final-main-section">
+        <section class="final-main-section section">
 
             <div class="final-main-text">
                 <h3>Lorem Ipsum</h3>
@@ -128,7 +136,7 @@
                 <div class="email-content">
                     <form action="" id="email-insert-form">
                         <input id="email-input" type="email" title="email-input" placeholder="Enter email address">
-                        <button type="button" id="email-button">Continue</button>
+                        <button type="button" id="email-button" class="button">Continue</button>
                     </form>
                 </div>
             </div>
@@ -147,10 +155,10 @@
             </div>
             <div class="footer-about-us">
                 <p>About us</p>
-                <a href="#">Zeux</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Careers</a>
-                <a href="#">Contact us</a>
+                <a href="#"  class="link">Zeux</a>
+                <a href="#"  class="link">Portfolio</a>
+                <a href="#"  class="link">Careers</a>
+                <a href="#"  class="link">Contact us</a>
             </div>
             <div class="footer-contact-us">
                 <p>Contact-us</p>
