@@ -15,9 +15,12 @@ main {
     flex-direction: column;
     height: 85%;
     justify-content: center;
-    padding: 5%;
     gap: 100px;
     font-size: 20px;
+}
+
+.section {
+    padding: 5%;
 }
 
 .introduction-section {
@@ -156,6 +159,8 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .description-text-section {
@@ -256,6 +261,8 @@ h3 {
     padding-top: 3ic;
     padding-bottom: 1ic;
     width: 25%;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .platforms-icon-arrow {
@@ -288,6 +295,12 @@ h3 {
     padding-top: 10px;
 }
 
+.projects-images-box div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .projects-images-elements {
     padding-top: 40px;
 }
@@ -301,6 +314,7 @@ h3 {
     flex-direction: column;
     gap: 50px;
     padding-bottom: 110px;
+    padding-top: 10px;
 }
 
 .final-main-text {

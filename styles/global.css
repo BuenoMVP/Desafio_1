@@ -13,8 +13,19 @@ body {
     line-height: 1.9;
 }
 
-.button:hover {
-    /* scale: 1.1; */
-    color: #000;
+.button-header:hover {
+    color: #ffffff;
+    background: #E47500;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+.button:hover {
+    color: #000;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: overline;
 }
