@@ -1,3 +1,95 @@
 body {
     background: linear-gradient(#2211E7, #383837);
 }
+
+.initial-main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.initial-box {
+    display: inherit;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.initial-box  span{
+    font-size: 16px;
+}
+
+#initial-text-color {
+    color: #E47500;
+}
+
+.initial-box  p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.initial-bkg {
+    padding-top: 50px;
+    width: 100%;
+}
+
+.initial-information {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.initial-information div {
+    display: inherit;
+}
+
+#info-1 {
+    flex-direction: column;
+    text-align: left;
+    border-right: 2px #ffffff solid;
+}
+
+.info-1-icons {
+    height: 70px;
+    width: 100%;
+}
+
+#info-2 {
+    display: inherit;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+    width: 40%;
+}
+
+.info-2-icons {
+    height: 35px;
+    width: 35px;
+}
+
+#info-3 {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 110px;
+    width: 40%;
+    border-left: 2px #ffffff solid;
+    padding-left: 70px;
+}
+
+.info-3-icons {
+    display: inherit;
+    padding-top: 15%;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 70px;
+}
+
+.info-3-icons img{
+    height: 30px;
+    width: 30px;
+}
