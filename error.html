@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/error.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <title>error</title>
 </head>
 <body>
+
+    <header>
+
+        <div class="header-logo">
+            <a class="header-logo-text" href="index.html">LOGO</a>
+        </div>
+        <div class="header-buttons-box">
+            <button onclick="toHome()" class="header-button button-header">Home</button>
+            <button onclick="toError()" class="header-button button-header">About us</button>
+            <button onclick="toError()" class="header-button button-header">Portfolio</button>
+            <button onclick="toError()" class="header-button button-header">News</button>
+            <button onclick="toContactUs()" class="header-button-contact button" id="button_contact_us">Contact us</button>
+        </div>
+
+    </header>
+
     <main>
 
         <div class="main-box">
@@ -21,10 +39,54 @@
 
                 <span>Contamos com sua paciência</span>
 
-                <button>Home</button>
+                <button onclick="toHome()" class="button">Home</button>
             </div>
         </div>
 
     </main>
+
+    <footer>
+
+        <section class="information">
+            <div class="footer-logo">
+                <p>LOGO</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+                <span>@Logo</span>
+            </div>
+            <div class="footer-about-us">
+                <p>About us</p>
+                <a href="error.html"  class="link">Zeux</a>
+                <a href="error.html"  class="link">Portfolio</a>
+                <a href="error.html"  class="link">Careers</a>
+                <a href="contact_us.html"  class="link">Contact us</a>
+            </div>
+            <div class="footer-contact-us">
+                <p>Contact-us</p>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                <span>+908 89097 890</span>
+            </div>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/">
+                    <img src="images/icons/face_white.png" alt="face_white">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="images/icons/insta_white.png" alt="insta_white">
+                </a>
+                <a href="https://x.com/">
+                    <img src="images/icons/twitter_white.png" alt="twitter_white">
+                </a>
+                <a href="https://br.linkedin.com/">
+                    <img src="images/icons/in_white.png" alt="in_white">
+                </a>
+            </div>
+        </section>
+
+        <section class="footer-copyright">
+            <p>Copyright ® 2022 prodesigner All rights Rcerved</p>
+        </section>
+
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
