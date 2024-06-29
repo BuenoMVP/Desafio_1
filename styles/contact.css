@@ -165,6 +165,13 @@ h2 {
     padding-left: 1px;
 }
 
+.label-error-contact {
+    display: none;
+    font-size: 14px;
+    max-width: 100%;
+    color: #ff0000;
+}
+
 #input-message {
     height: 150px;
 }
