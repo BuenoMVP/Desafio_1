@@ -1,5 +1,11 @@
-let btn_contact_us = document.getElementById("button_contact_us")
-
-btn_contact_us.addEventListener("click", () =>{
+function toContactUs () {
     window.location.href = 'contact_us.html'
-})
+}
+
+function toError () {
+    window.location.href = 'error.html'
+}
+
+function toHome () {
+    window.location.href = 'index.html'
+}
