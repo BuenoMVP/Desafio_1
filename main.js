@@ -12,22 +12,17 @@ function toHome () {
 
 const formHome = document.querySelector('#email-insert-form')
 const formContact = document.querySelector('#middle-form')
+const formInputs = document.querySelectorAll('.input')
 const labelErrorHome = document.querySelector('.label-error-home')
 const labelErrorContact = document.querySelectorAll('.label-error-contact')
+const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
+const regexName = /\W|_/
+const button = document.getElementById('form-button')
 
 formHome.addEventListener('submit', (e) => {
     e.preventDefault()
-    submitFormHome()
-})
-
-formContact.addEventListener('submit', (e) => {
-    e.preventDefault()
-    submitFormContact()
-})
-
-function submitFormHome () {
     try{
-        let validEmail = validateEmail(document.getElementById('email-input'), labelErrorHome)
+        let validEmail = validateEmailSection()
 
         infoSave('email', validEmail.value)
 
@@ -37,15 +32,24 @@ function submitFormHome () {
     }catch(err){
         console.log('Invalid input: '+err)
     }
-}
+})
 
-function submitFormContact () {
+formContact.addEventListener('submit', (e) => {
+    e.preventDefault()
+
     try{
 
-        let validName = validateName(document.getElementById('input-name'), labelErrorContact[0])
-        let validLastName = validateName(document.getElementById('input-last-name'), labelErrorContact[1])
-        let validEmail = validateEmail(document.getElementById('input-email'), labelErrorContact[2])
-        let validMessage = validateMessage(document.getElementById('input-message'), labelErrorContact[3])
+        let validName = validateName()
+        let validLastName = validateLastName()
+        let validEmail = validateEmailForm()
+        let validMessage = validateMessage()
+
+        // if(validName.value && validLastName.value && validEmail.value && validMessage.value){
+        //     console.log("disabled off")
+        //     button.disabled = false
+        // }
+
+        // console.log("passou o if")
 
         const user = {
             name: validName.value,
@@ -60,42 +64,58 @@ function submitFormContact () {
         validLastName.value = ""
         validEmail.value = ""
         validMessage.value = ""
+        // button.disabled = true
 
     }catch(err){
         console.log('Invalid input: '+err)
     }
-}
+})
 
-function validateName (name, label) {
-    const regexName = /\W|_/
-
-    if(regexName.test(name.value)){
-        addError(name, label)
+function validateName () {
+    if(regexName.test(formInputs[0].value) || formInputs[0].value.length == 0){
+        addError(formInputs[0], labelErrorContact[0])
     }else{
-        delError(name, label)
-        return name
+        delError(formInputs[0], labelErrorContact[0])
+        return formInputs[0]
     }
-
 }
 
-function validateEmail (email, label) {
-    const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
+function validateLastName () {
+    if(regexName.test(formInputs[1].value) || formInputs[1].value.length == 0){
+        addError(formInputs[1], labelErrorContact[1])
+    }else{
+        delError(formInputs[1], labelErrorContact[1])
+        return formInputs[1]
+    }
+}
+
+function validateEmailForm () {
+    if(!regexEmail.test(formInputs[2].value)){
+        addError(formInputs[2], labelErrorContact[2])
+    }else{
+        delError(formInputs[2], labelErrorContact[2])
+        return formInputs[2]
+    }
+}
+
+function validateEmailSection () {
+    let input = document.getElementById('email-box')
+    let email = document.getElementById('email-input')
 
     if(!regexEmail.test(email.value)){
-        addError(email, label)
+        addError(input, labelErrorHome)
     }else{
-        delError(email, label)
+        delError(input, labelErrorHome)
         return email
     }
-
 }
 
-function validateMessage (message, label) {
-    if(message.value.length < 10) {
-        addError(message, label)
+function validateMessage () {
+    if(formInputs[3].value.length < 10) {
+        addError(formInputs[3], labelErrorContact[3])
     }else{
-        delError(message, label)
-        return message
+        delError(formInputs[3], labelErrorContact[3])
+        return formInputs[3]
     }
 }
 
