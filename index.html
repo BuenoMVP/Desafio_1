@@ -220,12 +220,12 @@
                 </div>
                 <div class="email-content">
                     <form id="email-insert-form">
-                        <div class="email-box">
-                            <input id="email-input" type="email" title="email-input" placeholder="Enter email address" required>
+                        <div class="email-box" id="email-box">
+                            <input id="email-input" type="text" title="email-input" placeholder="Enter email address" oninput="validateEmailSection()">
                             <button type="submit" id="email-button" class="button">Continue</button>
                         </div>
                         <div>
-                            <span class="label-error-home">Invalid email: try -> example@example.com.br</span>
+                            <span class="label-error-home">Invalid email, try "example@example.com.br"</span>
                         </div>
                     </form>
                 </div>
@@ -256,16 +256,16 @@
                 <span>+908 89097 890</span>
             </div>
             <div class="footer-icons">
-                <a href="https://www.facebook.com/">
+                <a href="https://www.facebook.com/" target="_blank">
                     <img src="images/icons/face_white.png" alt="face_white">
                 </a>
-                <a href="https://www.instagram.com/">
+                <a href="https://www.instagram.com/" target="_blank">
                     <img src="images/icons/insta_white.png" alt="insta_white">
                 </a>
-                <a href="https://x.com/">
+                <a href="https://x.com/" target="_blank">
                     <img src="images/icons/twitter_white.png" alt="twitter_white">
                 </a>
-                <a href="https://br.linkedin.com/">
+                <a href="https://br.linkedin.com/" target="_blank">
                     <img src="images/icons/in_white.png" alt="in_white">
                 </a>
             </div>
