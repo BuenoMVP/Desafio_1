@@ -12,7 +12,6 @@ function toHome () {
 
 function toForm () {
     window.location.href = 'form.html'
-    return
 }
 
 const formHome = document.querySelector('#email-insert-form')
@@ -44,34 +43,25 @@ formContact.addEventListener('submit', (e) => {
 
     try{
 
-        let validName = validateName()
-        let validLastName = validateLastName()
-        let validEmail = validateEmailForm()
-        let validMessage = validateMessage()
-
-        // if(validName.value && validLastName.value && validEmail.value && validMessage.value){
-        //     button.disabled = false
-        // }
-
         const user = {
-            name: validName.value,
-            lastName: validLastName.value,
-            email: validEmail.value, 
-            message: validMessage.value
+            name: formInputs[0].value,
+            lastName: formInputs[1].value,
+            email: formInputs[2].value, 
+            message: formInputs[3].value
         }
 
         infoSave('user', user)
 
-        validName.value = ""
-        validLastName.value = ""
-        validEmail.value = ""
-        validMessage.value = ""
-        // button.disabled = true
+        formInputs[0].value = ""
+        formInputs[1].value = ""
+        formInputs[2].value = ""
+        formInputs[3].value = ""
+        button.disabled = true
 
         toForm()
 
     }catch(err){
-        console.log('Invalid input - '+err)
+        console.log('Incomplete form')
     }
 })
 
@@ -123,6 +113,22 @@ function validateMessage () {
     }
 }
 
+function validateInputs () {
+    let validName = validateName()
+    let validLastName = validateLastName()
+    let validEmail = validateEmailForm()
+    let validMessage = validateMessage()
+
+    try {
+        if(validName.value && validLastName.value && validEmail.value && validMessage.value){
+            button.disabled = false
+        }
+    }catch(err){
+        console.log("Button disabled")
+    }
+
+}
+
 function addError (input, label) {
     input.style.border = "1px solid #ff0000"
     label.style.display = "block"
@@ -134,5 +140,5 @@ function delError (input, label) {
 }
 
 function infoSave (key, data) {
-    sessionStorage.setItem(key, JSON.stringify(data))
+    localStorage.setItem(key, JSON.stringify(data))
 }

@@ -1,13 +1,43 @@
 header {
     height: 5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px
 }
 
+header div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-detail{
+    height: 5px;
+    width: 50px;
+    gap: 5px;
+}
+
+.line {
+    border-radius: 10px;
+}
+
+.dot {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.header-detail div {
+    background-color: #FA9021;
+    height: 100%;
+}
+
 .header-logo {
+    display: flex;
+    justify-content: left;
     width: 45%;
 }
 
