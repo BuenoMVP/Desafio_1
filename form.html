@@ -12,16 +12,21 @@
 <body>
 
     <header>
-
-        <div class="header-logo">
-            <a class="header-logo-text" href="index.html">LOGO</a>
+        <div>
+            <div class="header-logo">
+                <a class="header-logo-text" href="index.html">LOGO</a>
+            </div>
+            <div class="header-buttons-box">
+                <button onclick="toHome()" class="header-button button-header">Home</button>
+                <button onclick="toError()" class="header-button button-header">About us</button>
+                <button onclick="toError()" class="header-button button-header">Portfolio</button>
+                <button onclick="toError()" class="header-button button-header">News</button>
+                <button onclick="toContactUs()" class="header-button-contact button" id="button_contact_us">Contact us</button>
+            </div>
         </div>
-        <div class="header-buttons-box">
-            <button onclick="toHome()" class="header-button button-header">Home</button>
-            <button onclick="toError()" class="header-button button-header">About us</button>
-            <button onclick="toError()" class="header-button button-header">Portfolio</button>
-            <button onclick="toError()" class="header-button button-header">News</button>
-            <button onclick="toContactUs()" class="header-button-contact button" id="button_contact_us">Contact us</button>
+        <div class="header-detail">
+            <div class="line"></div>
+            <div class="dot"></div>
         </div>
 
     </header>
@@ -98,17 +103,17 @@
 
     </footer>
     <script>
-    window.onload(insertFormData())
-
-    function insertFormData () {
         const insertForm = document.querySelectorAll('.show-data span')
-        const user = JSON.parse(sessionStorage.getItem("user"))
+        const user = JSON.parse(localStorage.getItem("user"))
 
         insertForm[0].innerHTML = user.name
         insertForm[1].innerHTML = user.lastName
         insertForm[2].innerHTML = user.email
         insertForm[3].innerHTML = user.message
-    }
+
+        // window.onbeforeunload = () => {
+        //     return localStorage.clear()
+        // }
     </script>
     <script src="main.js"></script>
 </body>

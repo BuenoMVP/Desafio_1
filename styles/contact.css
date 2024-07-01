@@ -2,6 +2,21 @@ body {
     background: linear-gradient(#2211E7, #383837);
 }
 
+main {
+    position: relative;
+}
+
+.dot-white {
+    position: absolute;
+    right: 70px;
+    top: 40px;
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    margin: 50px;
+}
+
 .initial-main-section {
     display: flex;
     flex-direction: column;

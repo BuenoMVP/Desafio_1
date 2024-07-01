@@ -134,5 +134,5 @@ function delError (input, label) {
 }
 
 function infoSave (key, data) {
-    sessionStorage.setItem(key, JSON.stringify(data))
+    localStorage.setItem(key, JSON.stringify(data))
 }
