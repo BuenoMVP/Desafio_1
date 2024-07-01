@@ -8,12 +8,15 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 3%;
 }
 
 .initial-box {
     display: inherit;
     flex-direction: column;
     gap: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .initial-box  span{
@@ -51,7 +54,7 @@ body {
     text-align: left;
     border-right: 2px #ffffff solid;
     padding-right: 7%;
-    width: 30%;
+    width: 40%;
 }
 
 .info-1-icons {
@@ -76,7 +79,7 @@ body {
     justify-content: center;
     gap: 30px;
     height: 100%;
-    width: 40%;
+    width: 50%;
 }
 
 .info-2-icons {
@@ -90,7 +93,7 @@ body {
     align-items: center;
     text-align: left;
     height: 110px;
-    width: 50%;
+    width: 60%;
     border-left: 2px #ffffff solid;
     padding-left: 70px;
 }
