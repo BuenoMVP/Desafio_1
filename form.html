@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/error.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <title>error</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Form</title>
 </head>
 <body>
 
@@ -25,23 +25,34 @@
         </div>
 
     </header>
-
+    
     <main>
 
-        <div class="main-box">
-            <div class="image-box">
-                <img src="/images/icons/aviso.png" alt="image-error">
+        <section class="main-section">
+            <div>
+                <h1>Form sent successfully!</h1>
+                <h4>The completed information follows</h4>
             </div>
-            <div class="text-box">
-                <h1>ERROr_404</h1>
-                <p>Page not currently accessible...</p>
-                <p>- under development -</p>
-
-                <span>We count on your patience</span>
-
-                <button onclick="toHome()" class="button">Back to Home</button>
+            <div class="show-data">
+                <div>
+                    <p>Name</p>
+                    <span>-</span>
+                </div>
+                <div>
+                    <p>Last name</p>
+                    <span>-</span>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <span>-</span>
+                </div>
+                <div>
+                    <p>Message</p>
+                    <span>-</span>
+                </div>
+                
             </div>
-        </div>
+        </section>
 
     </main>
 
@@ -86,7 +97,19 @@
         </section>
 
     </footer>
+    <script>
+    window.onload(insertFormData())
 
+    function insertFormData () {
+        const insertForm = document.querySelectorAll('.show-data span')
+        const user = JSON.parse(sessionStorage.getItem("user"))
+
+        insertForm[0].innerHTML = user.name
+        insertForm[1].innerHTML = user.lastName
+        insertForm[2].innerHTML = user.email
+        insertForm[3].innerHTML = user.message
+    }
+    </script>
     <script src="main.js"></script>
 </body>
 </html>

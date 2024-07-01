@@ -50,7 +50,7 @@ main {
     line-height: 1.5;
 }
 
-.main-button {
+.introduction-text button {
     background: linear-gradient(#FA8305, #FB9E3C);
     border-radius: 30px;
     color: white;
@@ -78,15 +78,32 @@ main {
     flex-direction: row;
 }
 
-.image-box-2{
+.image-box-1 div{
     height: 100%;
     width: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    justify-content: right;
 }
 
-.image-box-3{
+.image-box-1 div div{
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.image-box-1 div div img{
+    height: 80%;
+    width: 50%;
+}
+
+#image-unreal {
+    width: 40%;
+    height: 70%;
+}
+
+.image-box-2{
     height: 100%;
     width: 100%;
     display: flex;
@@ -161,6 +178,11 @@ h3 {
     gap: 15px;
     color: #FFFFFF;
     text-decoration: none;
+    border-radius: 20px;
+}
+
+.game:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .description-text-section {
@@ -171,9 +193,10 @@ h3 {
     text-align: center;
     justify-content: center;
     margin-bottom: 20px;
+    padding: 5% 0px;
 }
 
-.description-text-box {
+.description-text-section div {
     text-align: center;
     font-size: 35px;
     font-weight: bold;
@@ -193,13 +216,13 @@ h3 {
     position: relative;
 }
 
-#lorem-ipsum-text {
+.lorem-ipsum-box span {
     width: 50%;
     font-size: 20px;
     margin-bottom: 50px;
 }
 
-#icon-lorem-ipsum-box {
+.lorem-ipsum-box div {
     position: absolute;
     right: 0;
     z-index: -1;
@@ -208,11 +231,11 @@ h3 {
     width: 40%;
 }
 
-#icon-lorem-ipsum {
+.lorem-ipsum-box div img {
     padding-top: 20%;
 }
 
-.lorem-ipsum-image {
+.lorem-ipsum img{
     max-width: 100%;
     max-height: 100%;
 }
@@ -241,7 +264,7 @@ h3 {
     height: auto;
 }
 
-#platforms-span {
+.platforms-box span {
     text-align: center;
     width: 75%;
     height: auto;
@@ -257,12 +280,18 @@ h3 {
     flex-wrap: wrap;
 }
 
-.platforms-icons-button {
+.platforms-icons-box a {
     padding-top: 3ic;
     padding-bottom: 1ic;
     width: 25%;
     color: #FFFFFF;
     text-decoration: none;
+    border-radius: 10px;
+}
+
+.platforms-icons-box a:hover{
+    background: rgba(62, 43, 172, 0.35);
+    font-weight: bold;
 }
 
 .platforms-icon-arrow {
@@ -278,7 +307,7 @@ h3 {
     gap: 20px;
 }
 
-#projects-span{
+.recent-projects span{
     font-size: 20px;
     width: 50%;
     text-align: center;
@@ -301,7 +330,7 @@ h3 {
     width: 100%;
 }
 
-.projects-images-elements {
+.projects-images-box div img {
     padding-top: 40px;
 }
 

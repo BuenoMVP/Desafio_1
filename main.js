@@ -10,13 +10,18 @@ function toHome () {
     window.location.href = 'index.html'
 }
 
+function toForm () {
+    window.location.href = 'form.html'
+    return
+}
+
 const formHome = document.querySelector('#email-insert-form')
 const formContact = document.querySelector('#middle-form')
 const formInputs = document.querySelectorAll('.input')
 const labelErrorHome = document.querySelector('.label-error-home')
 const labelErrorContact = document.querySelectorAll('.label-error-contact')
 const regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
-const regexName = /\W|_/
+const regexName = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/
 const button = document.getElementById('form-button')
 
 formHome.addEventListener('submit', (e) => {
@@ -45,11 +50,8 @@ formContact.addEventListener('submit', (e) => {
         let validMessage = validateMessage()
 
         // if(validName.value && validLastName.value && validEmail.value && validMessage.value){
-        //     console.log("disabled off")
         //     button.disabled = false
         // }
-
-        // console.log("passou o if")
 
         const user = {
             name: validName.value,
@@ -66,13 +68,15 @@ formContact.addEventListener('submit', (e) => {
         validMessage.value = ""
         // button.disabled = true
 
+        toForm()
+
     }catch(err){
-        console.log('Invalid input: '+err)
+        console.log('Invalid input - '+err)
     }
 })
 
 function validateName () {
-    if(regexName.test(formInputs[0].value) || formInputs[0].value.length == 0){
+    if(!regexName.test(formInputs[0].value) || formInputs[0].value.length == 0){
         addError(formInputs[0], labelErrorContact[0])
     }else{
         delError(formInputs[0], labelErrorContact[0])
@@ -81,7 +85,7 @@ function validateName () {
 }
 
 function validateLastName () {
-    if(regexName.test(formInputs[1].value) || formInputs[1].value.length == 0){
+    if(!regexName.test(formInputs[1].value) || formInputs[1].value.length == 0){
         addError(formInputs[1], labelErrorContact[1])
     }else{
         delError(formInputs[1], labelErrorContact[1])
