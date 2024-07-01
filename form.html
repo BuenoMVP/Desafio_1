@@ -97,7 +97,19 @@
         </section>
 
     </footer>
+    <script>
+    window.onload(insertFormData())
 
+    function insertFormData () {
+        const insertForm = document.querySelectorAll('.show-data span')
+        const user = JSON.parse(sessionStorage.getItem("user"))
+
+        insertForm[0].innerHTML = user.name
+        insertForm[1].innerHTML = user.lastName
+        insertForm[2].innerHTML = user.email
+        insertForm[3].innerHTML = user.message
+    }
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
