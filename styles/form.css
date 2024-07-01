@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(#2211E7, #383837);
+}
+
+main {
+    padding: 2% 5%;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-section div {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+.show-data { 
+    border: 2px solid #ffffff;
+    width: 50%;
+    height: 100%;
+    gap: 20px;
+    padding: 30px 0px;
+    background-color: #0f0b3d;
+}
+
+.show-data div {
+    width: 90%;
+    text-align: justify;
+}
+
+.show-data div p {
+    text-decoration: overline;
+    font-size: 18px;
+    color: #E47500;
+}
